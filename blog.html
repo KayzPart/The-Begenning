@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog / Accueil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Ressources/logo-miniature.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header nav -->
+    <header class="header">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <!-- Logo-navbar -->
+                <a class="navbar-brand" href="../../index.html"><img class="logo-site-header"
+                        src="../../image video/logo-miniature.png" alt="logo-site"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item d-flex justify-content-end ">
+                            <!-- Accès accueil -->
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item dropdown d-flex justify-content-end">
+                            <!-- Menu déroulant Blog -->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./blog.html">Accès Blog</a></li>
+                                <li><a class="dropdown-item" href="./elvis/elvis.html">Formats d'Images</a></li>
+                                <li><a class="dropdown-item" href="./tiff/tiff.html">Front-End</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item d-flex justify-content-end">
+                            <!-- Accès Contact -->
+                            <a class="nav-link" href="../contact/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Fin navbar -->
+    </header>
+    <!-- Fin Header -->
+    <div class="row article">
+        <div class="col-5 art-elvis">
+            <img id="img-art-elvis" src="./Ressources/IMAGE ARTCILE ELVIS.jpg" alt="">
+            <p class="p-art">
+                Sur cet article, nous allons voir les différents formats d'images les plus courants,
+                <br>
+                leur caractéristique et le domaine d'utilisation suivant nos besoins ...
+            </p>
+            <a href="./elvis/elvis.html">Lire la suite ...
+                <img class="click" src="./Ressources/click.png" alt="">
+            </a>
+        </div>
+        <div class="col-5 art-tiff">
+            <img id="img-art-tiff" src="./Ressources/IMAGE ARTICLE TIFF.jpg" alt="">
+            <p class="p-art">
+                Ici, nous allons parler du développeur Front-End, qui est-il, que fait-il ...
+            </p>
+            <a href="./tiff/tiff.html">Lire la suite ...
+                <img class="click" src="./Ressources/click.png" alt="">
+            </a>
+        </div>
+        <div class="col-12 recap-art">
+            <hr>
+            <h1 class="text-center pt-3">Tous nos articles</h1>
+            <div class="article">
+                <button>
+                    <a href="./formatImage.html">Formats d'images</a>
+                </button>
+                <button>
+                    <a href="./frontEnd.html">Front-End</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer      -->
+    <footer class="footer">
+        <marquee>
+            "Une équipe passionnée, pour un site qui vous est dédié "
+        </marquee>
+        <div>
+            <a class="link-footer link-dark text-decoration-none fw-bold" href="./mentions.html">Mentions
+                Légales</a>
+            <span>/</span>
+            <a class="link-footer link-dark text-decoration-none fw-bold" href="./equipe.html">L'équipe</a>
+            <span>/</span>
+            <a class="link-footer link-dark text-decoration-none fw-bold" href="./contact.html">Contact</a>
+        </div>
+        <img class="logo-site-footer" class="d-flex justify-content-start" src="./Ressources/logo-miniature.png"
+            alt="logo-site">
+    </footer>
+</body>
+
+</html>
